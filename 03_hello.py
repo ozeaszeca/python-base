@@ -34,7 +34,7 @@ current_language = os.getenv("LANG", "en_US")[:5]
 #current_language = "it_IT"
 # snake case padrão comum do python
 
-msg = "Hello, World!"
+msg = "Hello, World!!"
 
 if current_language == "pt_BR":
     msg = "Olá, Mundo!"
