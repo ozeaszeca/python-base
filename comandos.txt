@@ -56,3 +56,88 @@ python-base on  main [⇡?] via python-base …
 
 /home/ozeaszeca/Documents/python-base/.venv/bin/python
 
+
+#### Utilizando o ipython #######
+
+In [1]: int
+Out[1]: int
+
+In [2]: int?
+Init signature: int(self, /, *args, **kwargs)
+Docstring:
+int([x]) -> integer
+int(x, base=10) -> integer
+
+Convert a number or string to an integer, or return 0 if no arguments
+are given.  If x is a number, return x.__int__().  For floating point
+numbers, this truncates towards zero.
+
+If x is not a number or if base is given, then x must be a string,
+bytes, or bytearray instance representing an integer literal in the
+given base.  The literal can be preceded by '+' or '-' and be surrounded
+by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+Base 0 means to interpret the base from the string as an integer literal.
+>>> int('0b100', base=0)
+4
+Type:           type
+Subclasses:     bool, IntEnum, IntFlag, _NamedIntConstant
+
+In [3]: sum?
+Signature: sum(iterable, /, start=0)
+Docstring:
+Return the sum of a 'start' value (default: 0) plus an iterable of numbers
+
+When the iterable is empty, return the start value.
+This function is intended specifically for use with numeric values and may
+reject non-numeric types.
+Type:      builtin_function_or_method
+
+In [4]: %time print("a")
+a
+CPU times: user 35 µs, sys: 3 µs, total: 38 µs
+Wall time: 41.7 µs
+
+In [5]: import os
+
+In [6]: os.environ?
+Type:            _Environ
+String form:     environ({'SHELL': '/usr/bin/zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'SESSION_MANAGER': 'local <...> E': '1', 'OLDPWD': '/home/ozeaszeca/Documents/python-base', 'KONSOLE_DBUS_WINDOW': '/Windows/1'})
+Length:          78
+File:            ~/.pyenv/versions/3.11.5/lib/python3.11/os.py
+Docstring:       <no docstring>
+Class docstring:
+A MutableMapping is a generic container for associating
+key/value pairs.
+
+This class provides concrete generic implementations of all
+methods except for __getitem__, __setitem__, __delitem__,
+__iter__, and __len__.
+
+In [7]: os.getenv
+Out[7]: <function os.getenv(key, default=None)>
+
+In [8]: os.getenv?
+Signature: os.getenv(key, default=None)
+Docstring:
+Get an environment variable, return None if it doesn't exist.
+The optional second argument can specify an alternate default.
+key, default and the result are str.
+File:      ~/Documents/python-base/<frozen os>
+Type:      function
+
+In [9]: os.getenv("LANG")
+Out[9]: 'en_US.UTF-8'
+
+In [10]: os.getenv??
+Signature: os.getenv(key, default=None)
+Docstring:
+Get an environment variable, return None if it doesn't exist.
+The optional second argument can specify an alternate default.
+key, default and the result are str.
+File:      ~/Documents/python-base/<frozen os>
+Type:      function
+
+
+
+
+
