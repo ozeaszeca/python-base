@@ -1,0 +1,58 @@
+➜ python -m site
+sys.path = [
+    '/home/ozeaszeca/Documents/python-base',
+    '/home/ozeaszeca/.pyenv/versions/3.11.5/lib/python311.zip',
+    '/home/ozeaszeca/.pyenv/versions/3.11.5/lib/python3.11',
+    '/home/ozeaszeca/.pyenv/versions/3.11.5/lib/python3.11/lib-dynload',
+    '/home/ozeaszeca/.pyenv/versions/3.11.5/lib/python3.11/site-packages',
+]
+USER_BASE: '/home/ozeaszeca/.local' (exists)
+USER_SITE: '/home/ozeaszeca/.local/lib/python3.11/site-packages' (doesn't exist)
+ENABLE_USER_SITE: True
+
+python-base on  main [⇡] …
+➜ which python
+/home/ozeaszeca/.pyenv/shims/python
+
+python-base on  main [⇡] …
+➜ python -m venv .venv
+
+python-base on  main [⇡?] took 9.8s …
+➜ ls
+02_hello  02_hello.py  03_hello.py
+
+python-base on  main [⇡?] …
+➜ ls -a
+.  ..  02_hello  02_hello.py  03_hello.py  .git  .venv
+
+python-base on  main [⇡?] …
+➜ ls .venv/bin
+activate      activate.fish  pip   pip3.11  python3
+activate.csh  Activate.ps1   pip3  python   python3.11
+
+python-base on  main [⇡?] …
+➜ ls -la
+total 28
+drwxr-xr-x 4 ozeaszeca ozeaszeca 4096 Jan 10 00:56 .
+drwxr-xr-x 5 ozeaszeca ozeaszeca 4096 Dec  1 03:04 ..
+-rwxr-xr-x 1 ozeaszeca ozeaszeca  142 Dec  7 06:42 02_hello
+-rw-r--r-- 1 ozeaszeca ozeaszeca  142 Dec  7 07:05 02_hello.py
+-rwxrwxrwx 1 root      root       936 Dec 24 23:56 03_hello.py
+drwxr-xr-x 8 ozeaszeca ozeaszeca 4096 Jan 10 00:58 .git
+drwxr-xr-x 5 ozeaszeca ozeaszeca 4096 Jan 10 00:56 .venv
+
+python-base on  main [⇡?] …
+➜ which python
+/home/ozeaszeca/.pyenv/shims/python
+
+python-base on  main [⇡?] …
+➜ source .venv/bin/activate
+
+python-base on  main [⇡?] via python-base …
+➜
+
+python-base on  main [⇡?] via python-base …
+➜ which python
+
+/home/ozeaszeca/Documents/python-base/.venv/bin/python
+
