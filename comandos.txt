@@ -137,6 +137,215 @@ key, default and the result are str.
 File:      ~/Documents/python-base/<frozen os>
 Type:      function
 
+# tipo de dados, tipo inteiro
+
+python-base on  main …
+➜ ipython
+Python 3.11.5 (main, Sep 13 2023, 23:12:43) [GCC 12.2.0]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.16.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: numero == 65
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[1], line 1
+----> 1 numero == 65
+
+NameError: name 'numero' is not defined
+
+In [2]: numero = 65
+
+In [3]: #inferencia de tipo
+
+In [4]: #classe, categoria, tipo
+
+In [5]: numero
+Out[5]: 65
+
+In [6]: bin(65)
+Out[6]: '0b1000001'
+
+In [7]: #representação binária
+
+In [8]: letra = "A"
+
+In [9]: chr(65)
+Out[9]: 'A'
+
+In [10]: bin(65)
+Out[10]: '0b1000001'
+
+In [11]: numero
+Out[11]: 65
+
+In [12]: letra
+Out[12]: 'A'
+
+In [13]: id(numero)
+Out[13]: 140008123316360
+
+In [14]: type(numero)
+Out[14]: int
+
+In [15]: letra
+Out[15]: 'A'
+
+In [16]: print(letra)
+A
+
+In [17]: id(letra)
+Out[17]: 140008123358560
+
+In [18]: type(letra)
+Out[18]: str
+
+In [19]: letra
+Out[19]: 'A'
+
+In [20]: dir(int)
+Out[20]:
+['__abs__',
+ '__add__',
+ '__and__',
+ '__bool__',
+ '__ceil__',
+ '__class__',
+ '__delattr__',
+ '__dir__',
+ '__divmod__',
+ '__doc__',
+ '__eq__',
+ '__float__',
+ '__floor__',
+ '__floordiv__',
+ '__format__',
+ '__ge__',
+ '__getattribute__',
+ '__getnewargs__',
+ '__getstate__',
+ '__gt__',
+ '__hash__',
+ '__index__',
+ '__init__',
+ '__init_subclass__',
+ '__int__',
+ '__invert__',
+ '__le__',
+ '__lshift__',
+ '__lt__',
+ '__mod__',
+ '__mul__',
+ '__ne__',
+ '__neg__',
+ '__new__',
+ '__or__',
+ '__pos__',
+ '__pow__',
+ '__radd__',
+ '__rand__',
+ '__rdivmod__',
+ '__reduce__',
+ '__reduce_ex__',
+ '__repr__',
+ '__rfloordiv__',
+ '__rlshift__',
+ '__rmod__',
+ '__rmul__',
+ '__ror__',
+ '__round__',
+ '__rpow__',
+ '__rrshift__',
+ '__rshift__',
+ '__rsub__',
+ '__rtruediv__',
+ '__rxor__',
+ '__setattr__',
+ '__sizeof__',
+ '__str__',
+ '__sub__',
+ '__subclasshook__',
+ '__truediv__',
+ '__trunc__',
+ '__xor__',
+ 'as_integer_ratio',
+ 'bit_count',
+ 'bit_length',
+ 'conjugate',
+ 'denominator',
+ 'from_bytes',
+ 'imag',
+ 'numerator',
+ 'real',
+ 'to_bytes']
+
+In [21]: numero.bit_count()
+Out[21]: 2
+
+In [22]: #somente 2bits ligados
+
+In [23]: dir(__add__)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+Cell In[23], line 1
+----> 1 dir(__add__)
+
+NameError: name '__add__' is not defined
+
+In [24]: # ADDDIBLE
+
+In [25]: #aditivel
+
+In [26]: numero + 1
+Out[26]: 66
+
+In [27]: numero + 2
+Out[27]: 67
+
+In [28]: numero + 3
+Out[28]: 68
+
+In [29]:
+
+In [29]: numero.__add__(1)
+Out[29]: 66
+
+In [30]: numero.__add__
+Out[30]: <method-wrapper '__add__' of int object at 0x7f562e74b888>
+
+In [31]: numero.__sub__(1)
+Out[31]: 64
+
+In [32]: numero * 20
+Out[32]: 1300
+
+In [33]: numero.__mull__(2)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Cell In[33], line 1
+----> 1 numero.__mull__(2)
+
+AttributeError: 'int' object has no attribute '__mull__'
+
+In [34]: numero.__mul__(2)
+Out[34]: 130
+
+In [35]: len(dir(int))
+Out[35]: 73
+
+In [36]: numero.__eq__(0)
+Out[36]: False
+
+In [37]: numero.__gt__(100)
+Out[37]: False
+
+In [38]: numero > 100
+Out[38]: False
+
+In [39]: numero.__ge__(65)
+Out[39]: True
+
+In [40]: numero >= 65
+Out[40]: True
 
 
 
